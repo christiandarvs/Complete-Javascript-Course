@@ -1,4 +1,10 @@
 const user_input = 1;
+function displayDivider() {
+  for (let i = 0; i < 60; i++) {
+    process.stdout.write("-");
+  }
+  console.log();
+}
 
 function displayMenu() {
   console.log("Programming Languages Menu");
@@ -65,3 +71,66 @@ function switchSecondExample(choice) {
 // switchFirstExample(user_input);
 displayMenu();
 switchSecondExample(3);
+displayDivider();
+
+// ASSIGNMENT
+function countryForSarah(language, population, isLand) {
+  if (language == "English" && population < 50 && !isLand) {
+    console.log("You should live in Portugal");
+  } else {
+    console.log("Portugal does not meet your criteria");
+  }
+}
+
+let finlandPopulation = 6;
+let country = "Philippines";
+let continent = "Asia";
+let population = 113.9;
+let isLand = true;
+let newPHPopulation = population / 2;
+newPHPopulation++;
+let language = "Filipino";
+const AVERAGE_POPULATION = 33;
+let description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+
+console.log(`Country: ${country}`);
+console.log(`Continent: ${continent}`);
+console.log(`Population: ${population}`);
+console.log(`IsLand: ${isLand}`);
+console.log(`Language: ${language}`);
+console.log(`Divide Population by Half: ${newPHPopulation}`);
+console.log(`PH > FIN (Population)? ${newPHPopulation > finlandPopulation}`);
+console.log(`PH < AVG (Population)? ${newPHPopulation < AVERAGE_POPULATION}`);
+console.log(`Description: ${description}\n`);
+
+if (population > 33) {
+  console.log(`${country}'s population is above average`);
+} else {
+  console.log(`${country}'s population is below average`);
+}
+displayDivider();
+
+countryForSarah(language, population, isLand);
+displayDivider();
+
+switch (language) {
+  case "Chinese":
+  case "Mandarin":
+    console.log("MOST number of native speakers");
+    break;
+  case "Spanish":
+    console.log("2nd place in number of native speakers");
+    break;
+  case "English":
+    console.log("3rd place in number of native speakers");
+    break;
+  case "Hindi":
+    console.log("4th place in number of native speakers");
+    break;
+  case "Arabic":
+    console.log("5th place in number of native speakers");
+    break;
+  default:
+    console.log("Great language too!");
+    break;
+}

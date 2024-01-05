@@ -46,3 +46,42 @@ if (AGE >= 18) {
 }
 console.log();
 displayDivider();
+
+// ASSIGNMENT
+function countryForSarah(language, population, isLand) {
+  if (language == "English" && population < 50 && !isLand) {
+    console.log("You should live in Portugal");
+  } else {
+    console.log("Portugal does not meet your criteria");
+  }
+}
+
+let finlandPopulation = 6;
+let country = "Philippines";
+let continent = "Asia";
+let population = 113.9;
+let isLand = true;
+let newPHPopulation = population / 2;
+newPHPopulation++;
+let language = "Filipino";
+const AVERAGE_POPULATION = 33;
+let description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+
+console.log(`Country: ${country}`);
+console.log(`Continent: ${continent}`);
+console.log(`Population: ${population}`);
+console.log(`IsLand: ${isLand}`);
+console.log(`Language: ${language}`);
+console.log(`Divide Population by Half: ${newPHPopulation}`);
+console.log(`PH > FIN (Population)? ${newPHPopulation > finlandPopulation}`);
+console.log(`PH < AVG (Population)? ${newPHPopulation < AVERAGE_POPULATION}`);
+console.log(`Description: ${description}\n`);
+
+if (population > 33) {
+  console.log(`${country}'s population is above average`);
+} else {
+  console.log(`${country}'s population is below average`);
+}
+displayDivider();
+
+countryForSarah(language, population, isLand);

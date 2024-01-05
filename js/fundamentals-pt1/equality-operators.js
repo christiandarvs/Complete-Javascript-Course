@@ -32,3 +32,13 @@ displayDivider();
 // console.log(fave_color);
 
 // ASSIGNMENT
+const NUM_NEIGHBORS = Number(
+  prompt("How many neighbour countries does your country have?")
+);
+if (NUM_NEIGHBORS == 1) {
+  console.log("Only 1 border");
+} else if (NUM_NEIGHBORS > 1) {
+  console.log("More than 1 border");
+} else {
+  console.log("No borders");
+}
