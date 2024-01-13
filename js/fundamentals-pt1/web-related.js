@@ -59,3 +59,9 @@ if (NUM_NEIGHBORS == 1) {
 } else {
   console.log("No borders");
 }
+
+// const findInformation = prompt(
+//   "What information do you want to know about Christian? [firstName, lastName, age, eyeColor, nationality, programmingLang]"
+// );
+
+// console.log(person1[findInformation]);
