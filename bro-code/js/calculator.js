@@ -40,7 +40,7 @@ document.querySelector("#multiplyBtn").addEventListener("click", function () {
 document.querySelector("#divideBtn").addEventListener("click", function () {
   const firstNumber = document.querySelector("#firstNumInput").value;
   const secondNumber = document.querySelector("#secondNumInput").value;
-  const quotient = Number(firstNumber) / Number(secondNumber);
+  const quotient = (Number(firstNumber) / Number(secondNumber)).toFixed(4);
   checkIfEmpty(firstNumber, secondNumber, quotient);
 });
 
