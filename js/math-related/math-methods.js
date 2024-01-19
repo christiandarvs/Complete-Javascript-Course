@@ -26,7 +26,7 @@ console.log(`PI Value: ${piValue}\n`);
 
 let x = -10.35;
 console.log(`Floor: ${Math.floor(x)}`);
-console.log(`Ceil: ${Math.ceil(x)}`);
+console.log(`Ceil: ${Math.ceil(x)}\n`);
 
 /**
     Math.floor(x): This method rounds x down to the nearest integer. If x is negative, it will become more negative because it's rounding down (towards negative infinity).
@@ -39,3 +39,13 @@ console.log(`Ceil: ${Math.ceil(x)}`);
 
     If you want to generate a random number within a specific range, you can do so by multiplying the result by the range size and adding the starting number of the range. For example, to get a random integer between 1 and 10, you could use:
  */
+
+const randomNumber = Math.floor(Math.random() * 5) + 1;
+console.log(`Random Number: ${randomNumber}\n`);
+
+let randomNumbers = null;
+
+for (let i = 0; i < 10; i++) {
+  randomNumbers = Math.floor(Math.random() * 10) + 1;
+  console.log(`Random Number (Loop): ${randomNumbers}`);
+}

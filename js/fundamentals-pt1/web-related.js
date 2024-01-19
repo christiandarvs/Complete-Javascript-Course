@@ -1,3 +1,7 @@
+"use strict";
+
+console.log(document.querySelector(".desc").textContent);
+
 // const user_number = Number(prompt("Enter a number: "));
 
 // if (user_number > 1 && user_number <= 10) {
@@ -49,16 +53,16 @@
 // const choice = Number(prompt("Enter Choice: "));
 // switchSecondExample(choice);
 
-const NUM_NEIGHBORS = Number(
-  prompt("How many neighbour countries does your country have?")
-);
-if (NUM_NEIGHBORS == 1) {
-  console.log("Only 1 border");
-} else if (NUM_NEIGHBORS > 1) {
-  console.log("More than 1 border");
-} else {
-  console.log("No borders");
-}
+// const NUM_NEIGHBORS = Number(
+//   prompt("How many neighbour countries does your country have?")
+// );
+// if (NUM_NEIGHBORS == 1) {
+//   console.log("Only 1 border");
+// } else if (NUM_NEIGHBORS > 1) {
+//   console.log("More than 1 border");
+// } else {
+//   console.log("No borders");
+// }
 
 // const findInformation = prompt(
 //   "What information do you want to know about Christian? [firstName, lastName, age, eyeColor, nationality, programmingLang]"
